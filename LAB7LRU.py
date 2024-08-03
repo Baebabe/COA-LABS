@@ -1,3 +1,4 @@
+# LRU PAGE REPLACEMENT
 def pageFaults(pages, n, capacity): 
     s = [] 
     indexes = {} 
@@ -26,8 +27,8 @@ def pageFaults(pages, n, capacity):
     
     return page_faults 
 
-pages = [7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2]  
+pages = [6, 1, 1, 2, 0, 3, 4, 6, 0, 2, 1, 2, 1, 2, 0, 3, 2, 1, 2, 0]  
 n = len(pages) 
-capacity = 4
+capacity = 3
 print(f"Total Page Faults: {pageFaults(pages, n, capacity)}")
 
